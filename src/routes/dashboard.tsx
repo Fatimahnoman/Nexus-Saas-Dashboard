@@ -69,7 +69,8 @@ const badge: Record<string, string> = {
 };
 
 function useLog() {
-  const [log, setLog] = useState(() =>
+  type Entry = { id: number; text: string; kind: string; t: string };
+  const [log, setLog] = useState<Entry[]>(() =>
     events.slice(0, 6).map((e, i) => ({ id: i, text: e[0], kind: e[1], t: `${i * 7 + 2}s ago` })));
   useEffect(() => {
     let id = 100;
