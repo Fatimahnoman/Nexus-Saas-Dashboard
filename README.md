@@ -44,25 +44,13 @@
 
 ---
 
-## 📸 Architecture & Preview
-+-----------------------------------------------------------------+
-|                         NEXUS AI PLATFORM                       |
-+-----------------------------------------------------------------+
-|  🌐 Marketing Landing Page   <--->     📊 Real-Time Dashboard  |
-|  • 3D Hero & Mesh Gradients             • Interactive Revenue   |
-|  • Dynamic Billing Toggles              • Live Activity Stream  |
-|  • High-Converting UI Cards             • Agent Deployment Modal|
-+-----------------------------------------------------------------+
-
----
-
 ## 🚀 Getting Started (Local Setup)
 
 To run this project locally on your machine:
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/YOUR_GITHUB_USERNAME/nexus-saas-dashboard.git](https://github.com/YOUR_GITHUB_USERNAME/nexus-saas-dashboard.git)
+git clone [https://github.com/Fatimahnoman/nexus-saas-dashboard.git](https://github.com/Fatimahnoman/nexus-saas-dashboard.git)
 
 # 2. Navigate into the project folder
 cd nexus-saas-dashboard
