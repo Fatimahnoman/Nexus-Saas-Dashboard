@@ -75,7 +75,7 @@ function useLog() {
   useEffect(() => {
     let id = 100;
     const iv = setInterval(() => {
-      const e = events[Math.floor(Math.random() * events.length)];
+      const e = events[Math.floor(Math.random() * events.length)]!;
       const text = e[0].replace(/#\d+/, `#${Math.floor(100 + Math.random() * 900)}`);
       setLog((l) => [{ id: id++, text, kind: e[1], t: "just now" }, ...l].slice(0, 14));
     }, 2600);

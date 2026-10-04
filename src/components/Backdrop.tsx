@@ -30,12 +30,12 @@ export function Backdrop() {
       ctx.fillStyle = col;
       ctx.strokeStyle = col;
       for (let i = 0; i < pts.length; i++) {
-        const a = pts[i], ax = a.x * w, ay = a.y * h;
+        const a = pts[i]!, ax = a.x * w, ay = a.y * h;
         const dm = Math.hypot(ax - mouse.x, ay - mouse.y);
         ctx.globalAlpha = dm < 160 ? 0.9 : 0.4;
         ctx.beginPath(); ctx.arc(ax, ay, 1.4, 0, 7); ctx.fill();
         for (let j = i + 1; j < pts.length; j++) {
-          const b = pts[j], d = Math.hypot(ax - b.x * w, ay - b.y * h);
+          const b = pts[j]!, d = Math.hypot(ax - b.x * w, ay - b.y * h);
           if (d < 130) {
             ctx.globalAlpha = (1 - d / 130) * 0.18;
             ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(b.x * w, b.y * h); ctx.stroke();
